@@ -1,0 +1,50 @@
+## Archivos generados por Visual Studio
+.vs/
+*.user
+*.suo
+
+## Archivos de compilación
+bin/
+obj/
+GeneratedFiles/
+
+## Archivos temporales
+*.tmp
+*.log
+*.bak
+*.swp
+
+## Archivos de publicación
+publish/
+*.publish.xml
+
+## Archivos de configuración personal
+*.userprefs
+*.csproj.user
+
+## Archivos de Rider/JetBrains
+.idea/
+*.sln.iml
+
+## Archivos de macOS/Linux
+.DS_Store
+*.orig
+
+## Archivos de MAUI específicos
+Platforms/Android/obj/
+Platforms/Android/bin/
+Platforms/iOS/obj/
+Platforms/iOS/bin/
+Platforms/MacCatalyst/obj/
+Platforms/MacCatalyst/bin/
+Platforms/Windows/obj/
+Platforms/Windows/bin/
+
+## Archivos SQLite y de base de datos generados
+*.db
+*.db-shm
+*.db-wal
+
+## Secretos y archivos sensibles (si los tienes)
+appsettings.json
+secrets.json

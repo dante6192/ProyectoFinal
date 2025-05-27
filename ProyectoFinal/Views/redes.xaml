@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Views.redes"
+             Title="redes">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#4e73df" Offset="0.0" />
+            <!-- Color azul de Facebook -->
+            <GradientStop Color="#8c3b96" Offset="1.0" />
+            <!-- Color rosa de Instagram -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+    <StackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+
+        <!-- Título atractivo -->
+        <Label Text="¡Síguenos en nuestras redes sociales!" 
+               FontSize="24" 
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" 
+               TextColor="White" />
+
+        <!-- Botón de Facebook con logo -->
+        <Button Text=""
+                Clicked="OnFacebookClicked"
+                BackgroundColor="transparent"
+                BorderColor="White"
+                BorderWidth="2"
+                Padding="15"
+                CornerRadius="30">
+            <Button.ImageSource>
+                <FileImageSource File="facebook_icon.jpg"/>
+            </Button.ImageSource>
+            
+        </Button>
+
+        <!-- Botón de Instagram con logo -->
+        <Button Text=""
+                Clicked="OnInstagramClicked"
+                BackgroundColor="transparent"
+                BorderColor="White"
+                BorderWidth="2"
+                Padding="15"
+                CornerRadius="30">
+            <Button.ImageSource>
+                <FileImageSource File="instagram_icon.jpg" />
+            </Button.ImageSource>
+        </Button>
+
+    </StackLayout>
+    </ScrollView>
+
+</ContentPage>

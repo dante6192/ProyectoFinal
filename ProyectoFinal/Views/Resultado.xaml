@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Views.Resultado"
+             Title="Resultado">
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="Resultado del Diagnóstico"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+        <Image x:Name="imgResultado"
+                   HeightRequest="250"
+                   Aspect="AspectFit"
+                   BackgroundColor="#EFEFEF" />
+
+        <Entry x:Name="txtNombre"
+               Placeholder="Ingrese el Nombre"/>
+        <Entry x:Name="txtResultado"
+               
+               IsReadOnly="True"
+               Placeholder="Ingrese resultado"/>
+        <Entry x:Name="txtFecha"
+               IsReadOnly="True"
+               />
+
+        <Button Text="Volver a Capturar"
+                    Clicked="OnVolverCapturaClicked"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    CornerRadius="15" />
+
+        <Button Text="Guardar Resultado"
+                    Clicked="OnGuardarResultadoClicked"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    CornerRadius="15" />
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Views.captura"
+             Title="captura">
+    <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+
+        <Label Text="Toma una foto de la zona afectada"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="DarkSlateGray" />
+
+        <Image x:Name="imgPreview"
+                   HeightRequest="250"
+                   BackgroundColor="White"
+                   Aspect="AspectFit" />
+
+        <Button Text="Usar Cámara"
+                    FontSize="18"
+                    CornerRadius="15"
+                    BackgroundColor="SkyBlue"
+                    TextColor="White"
+                    Clicked="OnUsarCamaraClicked" />
+
+        <Button Text="Continuar con Diagnóstico"
+                    FontSize="18"
+                    CornerRadius="15"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    Clicked="OnContinuarClicked"      
+                    x:Name="btnContinuar" />
+
+        <Button Text="Ver Historial"
+                FontSize="18"
+                CornerRadius="15"
+                BackgroundColor="DarkGrey"
+                TextColor="White"
+                Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
